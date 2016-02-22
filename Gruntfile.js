@@ -9,8 +9,8 @@ module.exports = function(grunt){
 				options: {
 					pretty: true,
 					data: {
-						root:'/teamtreehouse',
-						staticRoot: '/teamtreehouse/public'
+						root:'/wapik',
+						staticRoot: '/wapik/public'
 					}
 				},
 				files: {
