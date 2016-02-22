@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		title Wapik
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(charset='UTF-8')
+		link(rel='stylesheet', href='#{staticRoot}/css/main.css')
+		link(href='https://fonts.googleapis.com/css?family=Roboto:400,300', rel='stylesheet', type='text/css')
+
+	body
+		.wrapper
+			.bg
+			.content
+				.header-nav 
+					a(href="#{root}/").logo
+						h1 wapik
+					p 
+						span.phone-icon 
+						|+375 44 545 67 98 
+					.links
+						a(href ='#{root}/').active главная
+						a(href ='#{root}/about.html') о нас
+						a(href ='#{root}/pricing') цены
+						a(href ='#{root}/contacts.html') контакты
+						a(href ='#{root}/#').button.button-normal.button-grey начать
+				.site-header
+					h1 Вас приветствует Wapik
+					p Wapik - это многоцелевой шаблон с современным и простым дизайном. Wapik - идеальный шаблон для вас!
+					a(href="#").button.button-large.button-green Узнать больше
+		.main-content
+			.content
+				.features
+					h1 Лучшее из наших возможностей
+					p.center.intro-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eveniet animi dolorem.
+					.cols.col-4.center
+						img(src='#{staticRoot}/img/ion-icon.png') 
+						h3 Иконки
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloribus labore, facere ut repudiandae animi.
+					.cols.col-4.center
+						img(src='#{staticRoot}/img/bottle-icon.png')  
+						h3 Креативный дизайн
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia delectus totam sequi rem labore quidem dolores debitis ratione nobis sed.
+					.cols.col-4.center
+						img(src='#{staticRoot}/img/sketches-icon.png') 
+						h3 Эскизы 
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, doloremque odit vel accusantium illo magnam!
+			
+		
+		a(href ='#{root}/about.html') О нас
+		a(href ='#{root}/contacts.html') Контакты
+	script(src='#{staticRoot}/js/jquery-2.2.0.min.js')
+	script(src='#{staticRoot}/js/my_scripts.js')
+
+			
