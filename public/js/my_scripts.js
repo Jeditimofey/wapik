@@ -1,9 +1,12 @@
 $(document).ready(function(){
 
 	$(window).scroll(function () {
-		var movement = -parseInt($(this).scrollTop() / 4);
+		var st = $(this).scrollTop();
 		$('.wrapper').css({
-			backgroundPosition: 'center ' + movement + 'px'
+			backgroundPosition: 'center ' + st/2 + 'px'
+			});
+		$('.site-header').css({
+			"transform": "translate(0%, -" + st/5 +"%"
 			});
 	});
 
