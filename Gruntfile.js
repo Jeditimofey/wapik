@@ -15,9 +15,9 @@ module.exports = function(grunt){
 				},
 				files: {
 					'index.html': 'views/pages/index.jade',
-					'pricing.html': 'views/pages/pricing.jade',
-					'contacts.html': 'views/pages/contacts.jade',
-					'about.html': 'views/pages/about.jade',
+					'views/pages/pricing.html': 'views/pages/pricing.jade',
+					'views/pages/contacts.html': 'views/pages/contacts.jade',
+					'views/pages/about.html': 'views/pages/about.jade',
 				}
 			}
 		}

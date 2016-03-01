@@ -173,6 +173,9 @@ hr
 	color: #fff
 	border-bottom: 1px solid #9E9E9E
 	position: relative
+	.logo-block
+		float: left
+		display: inline-block
 	.logo
 		text-transform: uppercase
 		font-weight: 600
@@ -194,7 +197,9 @@ hr
 		float: right
 		padding-left: 25px
 		a
-			margin-left: 35px
+			&:not(:first-child)		
+				margin-left: 5%
+			display: inline
 			text-transform: uppercase
 			font-weight: 700
 			font-size: 12px
@@ -203,7 +208,7 @@ hr
 				color: #DAE6E6
 			&:last-child
 				padding: 5px 25px
-				font-size: 12px
+				font-size: 11px
 				border-radius: 1px
 				color: #DAE6E6		
 
@@ -266,4 +271,21 @@ hr
 	.features
 		margin-bottom: 40px
 
-	
+@media screen and (max-width: 970px)
+	.header-nav
+		height: 100px
+		text-align: center
+		.logo-block
+			float: none
+			margin-bottom: 10px
+		.links
+			float: none
+			padding-left: 0px
+			width: 90%
+			margin: 0 auto
+			
+@media screen and (max-width: 680px)
+	.header-nav
+		.links
+			a
+				font-size: 11px
