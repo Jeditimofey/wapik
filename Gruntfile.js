@@ -9,7 +9,7 @@ module.exports = function(grunt){
 				options: {
 					pretty: true,
 					data: {
-						root:'/wapik',
+						root:'/wapik/pages',
 						staticRoot: '/wapik/public'
 					}
 				},
