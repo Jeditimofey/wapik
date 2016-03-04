@@ -22,9 +22,17 @@ $(document).ready(function(){
 				"visibility": "visible"
 			});
 		}
-		console.log(st);
 
 	});
+
+
+	var touch = $('#touch-menu');
+	var menu = $('.nav');
+
+	$(touch).on('click', function(e){
+		e.preventDefault();
+		menu.slideToggle();
+	})
 
 
 

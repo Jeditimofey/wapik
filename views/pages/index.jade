@@ -5,25 +5,34 @@ html(lang="en")
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(charset='UTF-8')
 		link(rel='stylesheet', href='#{staticRoot}/css/main.css')
+		link(rel='stylesheet', href='#{staticRoot}/css/icons.css')
 		link(href='https://fonts.googleapis.com/css?family=Roboto:400,300', rel='stylesheet', type='text/css')
 
 	body
 		.wrapper
-			.bg
-			.content
-				.header-nav 
-					.logo-block
-						a(href="#{root}/").logo
-							h1 wapik
-						p 
-							span.phone-icon 
-							|+375 44 545 67 98 
-					.links
-						a(href ='#{root}/').active главная
-						a(href ='#{root}/about.html') о нас
-						a(href ='#{root}/pricing.html') цены
-						a(href ='#{root}/contacts.html') контакты
-						a(href ='#{root}/#').button.button-normal.button-grey начать
+			.bg			
+			.header-nav.clearfix 
+				.logo-block
+					a(href="#{root}/").logo
+						h1 wapik
+					p 
+						span.phone-icon 
+						|+375 44 545 67 98 
+				#touch-menu
+					span.glyphicon.glyphicon-align-justify
+				nav
+					ul.nav.clearfix
+						li
+							a(href ='#{root}/').active главная
+						li
+							a(href ='#{root}/about.html') о нас
+						li
+							a(href ='#{root}/pricing.html') цены
+						li
+							a(href ='#{root}/contacts.html') контакты
+						li
+							a(href ='#{root}/#').nav-button.button-grey начать
+			.content		
 				.site-header
 					h1 Вас приветствует Wapik
 					p Wapik - это многоцелевой шаблон с современным и простым дизайном. Wapik - идеальный шаблон для вас!

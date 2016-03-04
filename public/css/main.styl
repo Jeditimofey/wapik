@@ -17,6 +17,9 @@ html, body
 a 
 	text-decoration: none
 	color: #fff
+
+ul 
+	list-style: none
 	
 hr
 	color: #a9b9b9
@@ -60,8 +63,13 @@ hr
 		
 .content
 	width: 70%
-	min-width: 500px
 	margin: 0 auto
+
+.clearfix
+	&:after
+		content: " "
+		display: table
+		clear: both
 
 .content:before, .content:after, .row:after, .row:before, .clear:before, .clear:after, header:before, header:after	
 		content: " "
@@ -145,7 +153,6 @@ hr
 	width: 100%
 
 .wrapper
-	min-width: 500px
 	background: #d2d2d2 url('street.jpg')
 	color: #fff
 	background-size: cover
@@ -170,7 +177,9 @@ hr
 	
 .header-nav
 	padding: 27px 0
-	height: 80px
+	z-index: 10
+	width: 90%
+	margin: 0 auto
 	color: #fff
 	border-bottom: 1px solid #9E9E9E
 	position: relative
@@ -194,24 +203,32 @@ hr
 		letter-spacing: 0.1px
 		font-weight: 700
 		color: lightgrey
-	.links
-		float: right
-		padding-left: 25px
-		a
-			&:not(:first-child)		
-				margin-left: 5%
-			display: inline
-			text-transform: uppercase
-			font-weight: 700
+	
+.nav
+	float: right
+	margin-top: -3px
+	li 
+		margin-left: 5px
+		float: left
+		a, #touch-menu
+			display: block
+			padding: 5px 15px
 			font-size: 12px
+			text-transform: uppercase
 			color: #869A9E
+			font-weight: 700
 			&:hover
 				color: #DAE6E6
-			&:last-child
-				padding: 5px 25px
-				font-size: 11px
-				border-radius: 1px
-				color: #DAE6E6		
+.nav-button
+	font-size: 11px
+	padding: 5px 25px!important
+	border-radius: 1px
+	color: #DAE6E6!important
+	
+	
+	
+#touch-menu, .menu-logo
+	display: none	
 
 .logo h1
 	font-size: 23px
@@ -272,21 +289,41 @@ hr
 	.features
 		margin-bottom: 40px
 
-@media screen and (max-width: 970px)
+@media screen and (max-width: 950px)
+	.content
+		width: 90%
+		margin: 0 auto
+
+@media screen and (max-width: 768px)
 	.header-nav
-		height: 100px
 		text-align: center
+		padding: 27px 0px 15px 0px
 		.logo-block
 			float: none
 			margin-bottom: 10px
-		.links
-			float: none
-			padding-left: 0px
-			width: 90%
-			margin: 0 auto
-			
-@media screen and (max-width: 680px)
-	.header-nav
-		.links
+	.nav
+		display: none
+		float: none
+		max-width: 70%
+		margin: 0 auto
+		li
+			margin-left: 1px
 			a
-				font-size: 11px
+				padding: 3px 7px
+	.nav-button
+		font-size: 11px
+		padding: 5px 15px!important
+		
+	#touch-menu
+		font-size: 20px
+		color: lightgrey
+		display: block
+		float: left
+		cursor: pointer
+
+@media screen and (max-width: 550px)
+	.nav
+		li
+			float: none
+			width: 30%
+			margin: 0 auto
